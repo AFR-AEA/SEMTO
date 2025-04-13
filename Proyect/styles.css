@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+  }
+  
+  header {
+    background: #6c9e1f;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 40%;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .user-buttons button {
+    background: white;
+    color: #6c9e1f;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .banner {
+    position: relative;
+    text-align: center;
+  }
+  
+  .banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .banner-text h2 {
+    margin: 0 0 10px;
+  }
+  
+  .banner-text button {
+    background: #6c9e1f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .categorias {
+    background: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cat-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .cat-item {
+    background: #e5e5e5;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .top-recetas {
+    padding: 20px;
+    background: white;
+  }
+  
+  .recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .receta {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
