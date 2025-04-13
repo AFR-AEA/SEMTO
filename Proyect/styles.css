@@ -1,9 +1,9 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    background: #f5f5f5;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+}
   header {
     background: #6c9e1f;
     color: white;
@@ -109,3 +109,92 @@ body {
     text-align: center;
   }
   
+/* Botón para ver/ocultar recetas */
+.boton-ver-recetas {
+  background: #ffffff;
+  color: #6c9e1f;
+  border: 2px solid #6c9e1f;
+  padding: 6px 12px;
+  margin: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.boton-ver-recetas:hover {
+  background: #6c9e1f;
+  color: #ffffff;
+}
+
+/* Panel flotante que contiene la lista de recetas */
+#panel-recetas {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 280px;
+  background: #ffffff;
+  border: 2px solid #6c9e1f;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Título del panel */
+#panel-recetas h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #6c9e1f;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Lista de recetas guardadas */
+#lista-recetas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-recetas li {
+  background: #f5f5f5;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botón para eliminar receta individual */
+#lista-recetas button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+#lista-recetas button:hover {
+  background: darkred;
+}
+
+/* Opcional: estilos para las tarjetas de recetas (si las usas) */
+.receta {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+}
+
+.receta:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
