@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kiwilimón Clon</title>
+  <title>Comidas con Corazon </title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,22 +11,20 @@
     <div class="logo">kiwilimón</div>
     <input type="text" placeholder="Busca una receta, ingrediente, palabra clave...">
     <div class="user-buttons">
+      <!-- Botón para mostrar/ocultar la lista de recetas -->
+      <button id="mostrar-recetas" class="boton-lista">📋 Ver recetas</button>
       <button>REGÍSTRATE</button>
       <button>INICIA SESIÓN</button>
     </div>
   </header>
+ 
 
-  <!-- Encabezado con logo, barra de búsqueda y botones de usuario
-   <section class="banner">
-    <div class="slide">
-      <img src="banner1.jpg" alt="Platillo en Cuaresma">
-      <div class="banner-text">
-        <h2>¿Qué hago de comer en Cuaresma?</h2>
-        <button>RECETARIO GRATIS</button>
-      </div>
-    </div>
-  </section>
- -->
+  <div class="banner">
+    <img src="banner.jpg" alt="Banner de recetas" class="banner-img">
+    <div class="banner-texto">¡Descubre nuevas recetas cada día!</div>
+ 
+<!-- Lista flotante de recetas guardadas -->
+
   <section class="categorias">
     <h3>¿QUÉ QUIERES COCINAR?</h3>
     <div class="cat-list">
@@ -52,6 +50,22 @@
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <div id="panel-recetas" style="display: none;">
+    <h4>📝 Recetas guardadas</h4>
+    <ul id="lista-recetas"></ul>
+  </div>
+
+<thead>
+    <nav class="nav-categorias">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Recetas</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Comunidad</a></li>
+      <li><a href="#">Más</a></li>
+    </ul>
+  </nav>
+</thead>
 </body>
+  <script src="script.js"></script>
 </html>
