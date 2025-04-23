@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comidas con Corazon </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Recetas con corazón</div>
+    <input type="text" placeholder="Busca una receta, ingrediente, palabra clave...">
+    <div class="user-buttons">
+      <!-- Botón para mostrar/ocultar la lista de recetas -->
+      <button id="mostrar-recetas" class="boton-lista">📋 Ver recetas</button>
+      <a href=""><button >REGÍSTRATE</button></a>
+      <a href="Login.html"><button >INICIA SESIÓN</button></a>
+    </div>
+  </header>
+
+  <div class="banner">
+    <img src="img/banner.jpg" alt="Banner de recetas" class="banner-img">
+    <div class="banner-texto">¡Descubre nuevas recetas cada día!</div>
+ 
+<!-- Lista flotante de recetas guardadas -->
+
+  <section class="categorias">
+    <h3>¿QUÉ QUIERES COCINAR?</h3>
+    <div class="cat-list">
+      <div class="cat-item">
+        <img src="img/faciles.jpg" alt="Fáciles">
+        <span>Fáciles</span>
+      </div>
+      <div class="cat-item">
+        <img src="img/postre.jpg" alt="Fáciles">6
+        <span>Postres</span>
+      </div>
+      <div class="cat-item">
+        <img src="img/pollo.jpg" alt="Fáciles">
+        <span>Pollo y carne</span>
+      </div>
+      <div class="cat-item">
+        <img src="img/parrilla.jpg" alt="Fáciles">
+        <span>Parrilla</span>
+      </div>
+      <div class="cat-item">
+        <img src="img/ensalada.jpg" alt="Fáciles">
+        <span>Ensalada</span>
+      </div>
+      <div class="cat-item">
+        <img src="img/guarniciones.jpg" alt="Fáciles">
+        <span>Guarniciones</span>
+      </div>
+      <div class="cat-item">
+        <img src="img/mariscos.jpg" alt="Fáciles">
+        <span>Mariscos</span>
+      </div>
+      <div class="cat-item">
+        <img src="img/pasta.jpg" alt="Fáciles">
+        <span>Pasta</span>
+      </div>
+      <div class="cat-item">
+        <img src="img/saludable.jpg" alt="Fáciles">
+        <span>Saludables</span>
+      </div>
+  </section>
+
+  <section class="top-recetas">
+    <h3>⭐ TOP 10 RECETAS ⭐</h3>
+    <div class="recetas-grid">
+      
+      <div class="receta">
+        <h4>Tallarines de Pollo</h4>
+        <iframe width="270" height="160" src="https://www.youtube.com/embed/nXxz5f_13D4" frameborder="0" allowfullscreen></iframe>
+      </div>
+  
+      <div class="receta">
+        <h4>Lomo Saltado</h4>
+        <iframe width="270" height="160" src="https://www.youtube.com/embed/xhnZ-UXaYTM" frameborder="0" allowfullscreen></iframe>
+      </div>
+  
+      <div class="receta">
+        <h4>Pastel de Chocolate</h4>
+        <iframe width="270" height="160" src="https://www.youtube.com/embed/6McqHZrP-IY" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+
+  <div id="panel-recetas" style="display: none;">
+    <h4>📝 Recetas guardadas</h4>
+    <ul id="lista-recetas"></ul>
+  </div>
+
+  <div class="contenedor-tips">
+    <!-- Tip principal -->
+    <div class="tip-principal">
+      <img src="img/ensalada.jpg" alt="Frijoles refritos">
+      <div class="info-tip">
+        <h3>7 PLATILLOS QUE PUEDES PREPARAR CON FRIJOLES REFRITOS</h3>
+        <p>
+          Si tienes un poco de frijoles refritos, ya sea negros o bayos, en tu refrigerador, no dudes en preparar alguna de estas 7 opciones, ¡te fascinarán! Lo mejor de todo es que hay algo para todos los gustos...
+        </p>
+        <a href="#" class="ver-tip">Ver el tip ➤</a>
+      </div>
+    </div>
+  
+    <!-- Notas pequeñas -->
+    <div class="notas-laterales">
+      <div class="nota">
+        <img src="img/ensalada.jpg" alt="Bolsa de ensalada">
+        <span class="categoria naranja">TIPS DE COCINA</span>
+        <h4>¿Cómo hacer que una bolsa de ensalada dure por más tiempo?</h4>
+        <p class="autor">Gretel Morales</p>
+      </div>
+  
+      <div class="nota">
+        <img src="img/refrigerador.jpg" alt="Comida caliente">
+        <span class="categoria naranja">TIPS DE COCINA</span>
+        <h4>¿La comida caliente se puede meter al refrigerador?</h4>
+        <p class="autor">Gretel Morales</p>
+      </div>
+  
+      <div class="nota">
+        <img src="img/plantas.jpg" alt="Plantas medicinales">
+        <span class="categoria morado">TIPS Y CONSEJOS</span>
+        <h4>Las 15 mejores plantas medicinales en México</h4>
+        <p class="autor">Kiwilimón</p>
+      </div>
+    </div>
+  </div>
+  
+</body>
