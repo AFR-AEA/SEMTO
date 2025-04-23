@@ -1,0 +1,438 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+}
+  header {
+    background: #6c9e1f;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 40%;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .user-buttons button {
+    background: white;
+    color: #6c9e1f;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .banner {
+    position: relative;
+    text-align: center;
+  }
+  
+  .banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .banner-text h2 {
+    margin: 0 0 10px;
+  }
+  
+  .banner-text button {
+    background: #6c9e1f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .categorias {
+    background: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cat-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .cat-item {
+    background: #e5e5e5;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  .cat-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .cat-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 8px;
+  }
+  
+  .cat-item span {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .top-recetas {
+    padding: 20px;
+    background: white;
+  }
+  
+  .recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .receta {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+/* Botón para ver/ocultar recetas */
+.boton-ver-recetas {
+  background: #ffffff;
+  color: #6c9e1f;
+  border: 2px solid #6c9e1f;
+  padding: 6px 12px;
+  margin: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.boton-ver-recetas:hover {
+  background: #6c9e1f;
+  color: #ffffff;
+}
+
+/* Panel flotante que contiene la lista de recetas */
+#panel-recetas {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 280px;
+  background: #ffffff;
+  border: 2px solid #6c9e1f;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Título del panel */
+#panel-recetas h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #6c9e1f;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Lista de recetas guardadas */
+#lista-recetas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-recetas li {
+  background: #f5f5f5;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botón para eliminar receta individual */
+#lista-recetas button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+#lista-recetas button:hover {
+  background: darkred;
+}
+
+/* Opcional: estilos para las tarjetas de recetas (si las usas) */
+  .receta {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    width: 290px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+
+.receta:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.top-recetas {
+  padding: 20px;
+  background: white;
+}
+
+.recetas-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.receta h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem; /* Aquí había un espacio raro antes del número */
+}
+.contenedor-tips {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 40px 0;
+}
+
+/* Tip principal a la izquierda */
+.tip-principal {
+  display: flex;
+  background: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 2;
+}
+
+.tip-principal img {
+  width: 180px;
+  object-fit: cover;
+}
+
+.tip-principal .info-tip {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tip-principal h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.tip-principal p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.ver-tip {
+  color: #3fa300;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ver-tip:hover {
+  text-decoration: underline;
+}
+
+/* Notas a la derecha */
+.notas-laterales {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1.5;
+}
+
+.nota {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.nota img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.categoria {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 6px 0;
+  color: #fff;
+}
+
+.naranja {
+  background: #e77d20;
+}
+
+.morado {
+  background: #b05fc1;
+}
+
+.nota h4 {
+  font-size: 0.85rem;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #222;
+}
+
+.autor {
+  font-size: 0.7rem;
+  color: #777;
+  font-style: italic;
+}
+/* MODALS */
+/* Estilos para modales de login y registro */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #d35400;
+}
+
+.modal form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.modal form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d35400;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal form button:hover {
+  background-color: #e67e22;
+}
+
+.modal p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.modal a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.modal a:hover {
+  text-decoration: underline;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #999;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
